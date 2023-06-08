@@ -7,6 +7,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
 }
 
 h1 {
@@ -119,24 +120,34 @@ input {
 
 /* Responsive design */
 
-@media all and (min-width: 700px) {
+@media all and (max-width: 1000px) {
     .form-container {
-        border-radius: 5px;
+        border-radius: 7px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #fff;
-        width: 50vw;
+        width: 100%;
+        height: 100%;
         padding: 25px;
         flex-direction: column;
     }
 
     input {
-        width: 50vw;
+        width: 80vw;
         height: 5vh;
-        border-radius: 3px;
+        border-radius: 5px;
         border: 3px solid black;
         outline: none;
+    }
+
+    label {
+        color: gray;
+        font-size: 2.5vh;
+    }
+
+    .submit-button {
+        font-size: 2.5vh;
     }
 }
 
